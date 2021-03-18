@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+  background: #114357;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F29492, #114357);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F29492, #114357); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header{
+  background: rgba(150, 81, 81, 0.486);
+  border-bottom: 1.5px solid rgb(62, 27, 160); ;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: inset 0 0 0 3px #fff,
+			0 0 0 4px #fff,
+			3px -3px 30px #1beabd, 
+      -3px 3px 30px #10abff;
+}
+.logo{
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-origin: center;
+  background-size:cover;
+  background-image: url(https://media3.giphy.com/media/tbyi455ahTA6A/giphy.gif);
+}
+.text-input{
+  background: rgba(255, 255, 255, 0.486);
+  border-bottom: 1.5px solid rgb(255, 255, 255); ;
+  height: 2.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: inset 0 0 0 3px #fff,
+			0 0 0 4px #fff,
+			3px -3px 30px #1beabd, 
+      -3px 3px 30px #10abff;
+
+}
+.send-button{
+  position: absolute;
+  right:5rem;
+  top:0.9rem;
+  border-radius:100%;
+  border: 1px solid white;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  outline: none;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.input{
+  font-size: 11px;
+  height:2rem;
+  width: calc(100% - 9rem);
+  background:rgba(0, 0, 0, 0.5);
+  border-radius: 0.8rem;
+  outline:none;
+  border:1px solid white;
+  color:white;
+  padding-left:10px;
+
+}
+.messages{
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 1;
+  overflow: auto;
+}
+.message-row{
+  margin-top: 20px;
+  width: (100% - 2rem);
+  display:flex;
+}
+.message{
+  background: black;
+  color: rgba(255, 255, 255, 0.904);
+  border-radius: 10px;
+  margin: 4px;
+  margin-bottom: 30px;
+  display: inline-block;
+  padding: 4px 12px;
+  display:flex;
+  align-content: left;
+  
+}
+.name-picker{
+  display: flex;
+  margin-left: 9rem;
+  border-radius: 0.8rem;
+  outline:none;
+  border:1px solid white;
+
+
+}
+.user-button{
+  color:rgb(230, 26, 196);
+  background-color:rgb(9, 47, 78) ;
+  border-radius:10%;
+}
